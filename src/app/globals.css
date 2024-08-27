@@ -1,3 +1,5 @@
+/* src/styles/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,13 +19,22 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  background-color: var(--background-start-rgb); /* Use CSS variables */
+  color: rgb(var(--foreground-rgb)); /* Use CSS variables */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 @layer utilities {
